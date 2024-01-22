@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/imagem.png" type="image/x-icon">
+    <title>Cardapio</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+   
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+/* slide */
+
+/* navbar */
+.menu {
+position: fixed;
+top: 0;
+left: 0;
+padding: 0.5%;
+box-shadow: 1px 1px #000000a6;
+background-color: #302e2ed8;
+width: 100%;
+display: flex;
+justify-content: left;
+text-align: center;
+align-items: center;
+z-index: 100;
+}
+
+.menu .home {
+   position: relative;
+   left: -1%;
+   padding:0 2%;
+   font-size: 20px;
+   color: #fff;
+}
+
+.menu a {
+    font-size: 26px;
+    color:red;
+    font-weight: 500;
+    margin:0 10px;
+}
+
+.menu span {
+    color: #000;
+}
+
+/* navbar */
+
+.carrossel {
+    box-shadow: 2px 2px 4px #000;
+    overflow: hidden;
+    height: 400px;
+    width: 700px;
+    border-radius: 10px;
+    position: absolute;
+    top:20%;
+    
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+img {
+    object-fit: cover;
+    height: 400px;
+    width: 700px;
+    border-radius: 10px;
+}
+/* slide */
+
+/* cardapio */
+
+.cardapio {
+    margin-top: 50%;
+    padding:0;
+}
+
+.cardapio h2 {
+    padding: 0 2%;
+    color: red;
+    font-size: 30px;
+}
+
+.cardapio ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    white-space: wrap;
+}
+
+.cardapio li {
+    border: 2px solid  #e7e99a;
+    margin: 10px;
+    border-radius: 15px;
+    padding-bottom: 3%;
+}
+
+.cardapio img {
+    background-color: #e7e99a;
+    width: 470px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.cardapio a {
+   color: var(--dark);
+   font-size: 26px;
+}
+
+.cardapio span{
+   position: relative;
+   top: 6.5%;
+   font-weight: 500;
+   color: #000;
+  
+
+}
+/* cardapio */
+
+/* Responsivo  785 px*/
+
+@media (max-width: 785px) {
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.menu .home{
+   padding:0 2%;
+   font-size: 20px;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   font-size: 16px;
+}
+
+.menu a{
+    width: 100%;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.carrossel {
+    width: 600px;
+    height: 300px;
+}
+
+img {
+width: 800px;
+height: 300px;
+object-fit: cover;
+}
+
+.cardapio {
+    margin-top: 60%;
+}
+
+.cardapio h2 {
+    font-size: 22px;
+   
+    padding: 0 5%;
+}
+
+.cardapio img {
+    width: 340px;
+}
+
+.cardapio span{
+    font-size: 20px;
+    position: relative;
+    top: 3%;
+}
+
+}
+
+/* Responsivo  785 px*/
+
+/* responsivo 500px */
+@media screen and (max-width: 500px) {
+.menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    padding: 0;
+}
+
+.menu a{ 
+font-size: 30px;
+}
+
+.menu .home {
+    width: 100%;
+    margin: 0;
+    padding:0 2%;
+    display: none;
+}
+
+.carrossel {
+    display: none;
+}
+
+.cardapio {
+    margin-top: 15%;
+}
+}
+
+
+/* responsivo 500px */
+
+
+    </style>
+</head>
+
+<body>
+
+<!-- navbar -->
+<nav class="menu">
+    <a href="http://127.0.0.1:5500/index.html#" class="home">Início</a>
+    <a href="#hamburguers"class="home">Hamburguer's</a>
+    <a href="#" class="home">Bebidas</a>
+    <a href="" class="home">Sobre</a>
+    
+    <a href="#">F<span>as</span>t Bu<span>rgu</span>er</a>
+   </nav>
+   <!-- navbar -->
+
+    <!-- slide -->
+    <div class="carrossel">
+        <div class="container" id="img">
+            <img src="./img/slide.png" alt="slide 1">
+            <img src="./img/slide1.png" alt="slide 2">
+            <img src="./img/slide2.png" alt="slide 3">
+            <img src="./img/slide3.png" alt="slide 4">
+        </div>
+    </div>
+   <!-- slide -->
+
+<!-- cardapio -->
+   <section class="cardapio">
+    <h2>Hamburguer's</h2>
+    <ul id="hamburguers">
+       <li><a href="#"><img src="./img/item 1.png" alt="Hamburguer 1"><span>Hamburguer Simples</span></a></li>
+       <li><a href="#"><img src="./img/item 2.png" alt="Hamburguer 2"><span>Hamburguer Duplo</span></a></li>
+       <li><a href="#"><img src="./img/item 3.png" alt="Hamburguer 3"><span>Hamburguer Triplo</span></a></li>
+       <li><a href="#"><img src="./img/item 4.png" alt="Hamburguer 5"><span>Hamburguer C/ Nuggets</span></a></li>
+       <li><a href="#"><img src="./img/item 5.png" alt="Hamburguer 4"><span>Hamburguer Simples 2</span></a></li>
+       <li><a href="#"><img src="./img/item 6.png" alt="Hamburguer 6"><span>Hamburguer Simples 3</span></a></li>
+    </ul>
+    
+   </section>
+
+   <!-- cardapio -->
+
+
+</body>
+<script>
+    const imgs = document.getElementById("img");
+    const img = document.querySelectorAll("#img img");
+
+    let idx = 0;
+    function carrossel(){
+        idx++;
+    if(idx > img.length - 1){
+        idx = 0;
+        }
+       
+        
+        imgs.style.transform = `translateX(${-idx * 700}px)`;
+    }
+
+    setInterval(carrossel, 3000);
+    </script>
+</html>

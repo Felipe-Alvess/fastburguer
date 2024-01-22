@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/imagem.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Fast Burguer</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo" >F<span>as</span>t Bu<span>rgu</span>er</a>
+            <ul class="nav-menu">
+                               
+                <li class="nav-item" ><a href="#">Início</a></li>
+                <li class="nav-item" ><a href="#Contatos">Contatos</a></li>
+                <li class="nav-item" ><a href="#"onclick="clickMenu()">Menu</a></li>
+                <li class="nav-item" ><a href="http://127.0.0.1:5500/cardapio.html">Hamburguer's</a></li>
+                <i class='bx bx-search'></i>
+          
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <div class="dropdown">
+            <ul id="items">
+                <li><a href="#"onclick="clickCombo()">Combo</a></li>
+                <li><a href="#"onclick="clickMonte()">Monte seu hamburguer</a></li>
+                <li><a href="#"onclick="clickBebida()">Bebidas</a></li>
+                <li><a href="#"onclick="clickHamburguer()">Hamburguers</a></li>
+                
+                <li><a href="#">Faça seu pedido</a></li>
+                
+                </ul>
+                <div class="combo">
+                    <ul id="kit">
+                        <li><a href="#"onclick="clickCombo()">Hamburguer com bacon + fritas + refrigerante 2L</a></li>
+                        <li><a href="#"onclick="clickCombo()">Hamburguer com ovos + fritas + Cocaa Cola 2L</a></li>
+                        <li><a href="#"onclick="clickCombo()">Hamburguer com bacon + Dolly 2L</a></li>
+                        <li><a href="#"onclick="clickCombo()">Hamburguer com bacon + Fanta Uva 2L</a></li>
+                        <li><a href="#"onclick="clickCombo()">Hamburguer com bacon + Fanta Laranja 2L</a></li>
+                        <li><a href="#"onclick="clickCombo()">Hamburguer com bacon + Fanta Laranja 350 ML</a></li>
+                        <li><a href="#"onclick="clickCombo()">Hamburguer com bacon + Coca Cola 350 ML</a></li>
+                        <li><a href="#"onclick="clickCombo()">Hamburguer com bacon + Fanta Uva 350 ML</a></li>
+                    </ul>
+                   </div>
+
+                   <div class="monte-seu-hamburguer">
+                    <ul id="monte">
+                        <li><a href="#"onclick="clickMonte()">Presunto </a></li>
+                        <li><a href="#"onclick="clickMonte()">Ovo </a></li>
+                        <li><a href="#"onclick="clickMonte()">Bacon </a></li>
+                        <li><a href="#"onclick="clickMonte()">Mussarela </a></li>
+                        <li><a href="#"onclick="clickMonte()">Chedar </a></li>
+                        <li><a href="#"onclick="clickMonte()">Picles </a></li>
+                        <li><a href="#"onclick="clickMonte()">Maionese </a></li>
+                        <li><a href="#"onclick="clickMonte()">Ketchup </a></li>
+                        <li><a href="#"onclick="clickMonte()">Mostarda </a></li>
+                        <li><a href="#"onclick="clickMonte()">Molho Rose </a></li>
+                        <li><a href="#"onclick="clickMonte()">Batata Frita </a></li>
+                        <li><a href="#"onclick="clickMonte()">Alfaçe </a></li>
+                        <li><a href="#"onclick="clickMonte()">Tomate </a></li>
+                        <li><a href="#"onclick="clickMonte()">Cebola </a></li>
+                    </ul>
+                    </div>
+
+                    <div class="bebidas">
+                        <ul id="bebida">
+                            <li><a href="#"onclick="clickBebida()">Coca Cola 2L</a></li>
+                            <li><a href="#"onclick="clickBebida()">Cerveja 350 ML</a></li>
+                            <li><a href="#"onclick="clickBebida()">Cerveja 473 ML</a></li>
+                            <li><a href="#"onclick="clickBebida()">Cerveja Long Neck</a></li>
+                            <li><a href="#"onclick="clickBebida()">Fanta Laranja 2L</a></li>
+                            <li><a href="#"onclick="clickBebida()">Fanta Uva 2L</a></li>
+                            <li><a href="#"onclick="clickBebida()"></a>Dolly 2L</li>
+                            <li><a href="#"onclick="clickBebida()"></a>Refrigerante Lata 350 ML</li>
+                        </ul>
+                        </div>
+                    
+                    <div class="hamburguers">
+                    <ul id="hamburguer">
+                    <li><a href="#"onclick="clickHamburguer()">Hamburguer de Peru</a></li>
+                    <li><a href="#"onclick="clickHamburguer()">Hamburguer de Frango</a></li>
+                    <li><a href="#"onclick="clickHamburguer()">Hamburguer de Presunto</a></li>
+                    <li><a href="#"onclick="clickHamburguer()">Hamburguer de Bacon</a></li>
+                    <li><a href="#"onclick="clickHamburguer()">Hamburguer de Mussarela</a></li>
+                    <li><a href="#"onclick="clickHamburguer()">Hamburguer Bacon com ovos</a></li>
+                    </ul>
+                </div>
+            
+               
+                
+               
+
+            </div>
+            
+     </header>
+    <main>
+        <section class="home" >
+            <div class="home-text">
+                <h4 class="text-h4">Bem vindos ao Fast Burguer</h4>
+                <h1 class="text-h1">O melhor Hamburguer da cidade</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Dignissimos earum possimus aperiam quos alias pariatur qui, 
+                aliquid ab voluptas adipisci molestiae distinctio maxime nostrum quisquam soluta 
+                laboriosam voluptatibus quo nobis? </p>
+                <a href="#" class="home-btn">Mais sobre nós</a>
+            </div>
+           <div class="home-img">
+           <img src="./img/imagem.png" alt="hamburguer">
+           </div>
+           </section>
+           
+           <section id="Contatos">
+            <div class="contatos">
+              <ul>
+                <li>Trabalhe conosco</li>
+                <li>Termos e condições</li>
+                <li>Informações</li>
+                <li>CNPJ n.º 00.000.000/0001-00</li>
+                <li>Rua Vereda Tropical 454 Chácara Estrela</li>
+                <li>Santana de Parnaíba/SP</li>
+                <li>CEP 06513-100</li>
+                <li>Fale conosco</li>
+                <li>empresa grupo Fast Burguer</li>
+                <li>Copyright © 1999-2023 github</li>
+                <li>Desenvolvido por Felipe Alves</li>
+                <li>Cel 1: 11930846798</li>
+                <li>Cel 2: 11941593494</li>
+             </ul>
+             <div class="media-social">
+                <i class='bx bxl-github'></i>
+                <i class='bx bxl-linkedin'></i>
+                <i class='bx bxl-whatsapp'></i>
+             </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
